@@ -9,15 +9,15 @@ public class Andador extends Robo {
 
 	
 	public void Avançar() {
-		plano.listaCelulas[posicaox][posicaoy].criatura= null;
+		plano.listaCelulas[posicaox][posicaoy].criaturas.remove(0);
 		posicaoy++;
-		plano.listaCelulas[posicaox][posicaoy].criatura= this;
+		plano.listaCelulas[posicaox][posicaoy].criaturas.add(this);
 	}
 
 	public void Retroceder() {
-		plano.listaCelulas[posicaox][posicaoy].criatura= null;
+		plano.listaCelulas[posicaox][posicaoy].criaturas.remove(0);
 		posicaoy--;
-		plano.listaCelulas[posicaox][posicaoy].criatura= this;
+		plano.listaCelulas[posicaox][posicaoy].criaturas.add(this);
 	}
 
 }

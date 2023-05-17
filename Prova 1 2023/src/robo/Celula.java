@@ -1,17 +1,19 @@
 package robo;
 
+import java.util.ArrayList;
+
 public class Celula {
 
 	public int posicaoX;
 	public int posicaoY;
 	public int id;
-	public Criatura criatura;	
+	public ArrayList<Criatura> criaturas;	
 	
 	public Celula(int id, int x , int y) {
 		posicaoX = x;
 		posicaoY = y;
 		this.id = id;
-		criatura =null;
+		criaturas =new ArrayList<Criatura>();
 	}
 	
 	public String imprimir() {
